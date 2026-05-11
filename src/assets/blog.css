@@ -1,0 +1,146 @@
+/* Container */
+.blog-container {
+  padding: clamp(40px, 8vw, 80px) 20px;
+  background: linear-gradient(to bottom, #f9fafc, #eef1f7);
+  text-align: center;
+}
+
+/* Heading */
+.blog-container h1 {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: -0.5px;
+}
+
+
+.imgblog{
+width:500px;
+height:340px;
+
+}
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 50px;
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+/* Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: clamp(20px, 3vw, 35px);
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card */
+.blog-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.35s ease;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.blog-card:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.blog-card img {
+  width: 100%;
+  height: clamp(180px, 25vw, 220px);
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Content */
+.blog-content {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+}
+
+/* Meta */
+.meta {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+/* Title */
+.blog-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Text */
+.blog-content p {
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Button */
+.read-btn {
+  align-self: flex-start;
+  margin-top: 15px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.read-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(102,126,234,0.4);
+}
+
+.full-content{
+text-align:justify;
+margin-left:20%;
+margin-right:20%;
+}
+.back-btn{
+width:120px;
+margin:12px;
+}
+/* Tablet tweaks */
+@media (max-width: 768px) {
+  .blog-content {
+    padding: 18px;
+  }
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  .blog-container {
+    padding: 40px 15px;
+  }
+
+  .blog-card {
+    border-radius: 14px;
+  }
+}
+
+

@@ -1,0 +1,17 @@
+import Person from './components/person.js'
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+      <Person/>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+
+//this file is being edited using Emacs now which is an awesome editor.
